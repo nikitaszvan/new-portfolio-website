@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "GT Walsheim";
+  src: url("./fonts/GT-Walsheim-Black.otf") format("opentype");
+}
+@font-face {
+  font-family: "GT Walsheim Condensed";
+  src: url("./fonts/GT-Walsheim-Condensed-Black.otf") format("opentype");
+}
+@font-face {
+  font-family: "GT Walsheim Condensed Bold Oblique";
+  src: url("./fonts/GT-Walsheim-Condensed-Bold-Oblique.otf") format("opentype");
+}
+@font-face {
+  font-family: "GT Walsheim Condensed Bold";
+  src: url("./fonts/GT-Walsheim-Condensed-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "GT Walsheim Condensed Medium";
+  src: url("./fonts/GT-Walsheim-Condensed-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "GT Walsheim Condensed Ultra-Bold";
+  src: url("./fonts/GT-Walsheim-Condensed-Ultra-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("./fonts/Kanit-Black.ttf") format("truetype");
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #F2F2F2;
+}
+
+html {
+  font-size: 10px;
+}
+
+.first-hero-bg {
+  width: 91%;
+  height: 100vh;
+  background-color: #ECE7E1;
+  margin-left: 4.5%;
+  margin-right: 4.5%;
+  margin-top: 14px;
+}
+.first-hero-bg:nth-child(1) h1, .first-hero-bg:nth-child(2) h1 {
+  font-family: "Kanit";
+  font-size: 35rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
