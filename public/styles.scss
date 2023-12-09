@@ -48,24 +48,25 @@ body, html {
 
 .first-hero-bg {
     width: 91%;
-    height: 100vh;
+    max-height: 25vw;
+    min-height: 50vw;
     background-color: #ECE7E1;
     margin-left: 4.5%;
     margin-right: 4.5%;
-    margin-top: 14px;
+    margin-top: 0.5vw;
+    z-index: -1;
 
-    > img {
-        &:nth-child(2) {
-            display: inline-block;
-            height: 100vh;
-        }
-    }
+}
 
     .h1-h2-container {
-        display: inline-block;
+        display: block;
         position: relative;
         left: 8vw;
         bottom: 20vw;
+
+    > * {
+        display: block;
+    }
 
     > h1 {
         width: 52vw;
@@ -78,9 +79,6 @@ body, html {
             content: attr(data-text);
             -webkit-text-stroke: 0.4vw rgb(62, 37, 15, 0.9);
             color: rgb(0, 0, 0, 0);
-            // position: absolute;
-            // left: 0;
-            // z-index: -1
         }
     }
 
@@ -94,14 +92,29 @@ body, html {
         bottom: 3vw;
     }
 
+    > img {
+        position: relative;
+        width: 4vw;
+    }
 }
-} 
+
+
+
+.h1-h2-container + img {
+    width: 27vw;
+    position: relative;
+    bottom: 62vw;
+    right: 4vw;
+    float: right;
+    z-index: 2;
+}
 
 .first-hero-design {
     display: inline-block;
     position: relative;
     bottom: 7.5vw;
     right: 1.5vw;
+    z-index: 2;
 
     h1 {
         &:nth-child(1), &:nth-child(2) {
@@ -141,3 +154,44 @@ body, html {
     }
 }
 
+.first-hero-border {
+    width: 100%;
+    max-height: 21vw;
+    min-height: 48vw;
+    background-color: rgb(0, 0, 0, 0);
+    border: 0.3vw solid rgb(62, 37, 15, 0.7);
+    right: 2vw;
+    bottom: 109vw;
+    z-index: 1;
+    position: relative; 
+    clear: both;
+}
+
+.first-hero-tab {
+
+    > * {
+        display: inline;
+    }
+
+    .tab-triangle {
+        width: 0; 
+        height: 0; 
+        border-left: 10vw solid transparent;
+        border-right: 10vw solid transparent;
+        border-top: 10vw solid #ECE7E1;
+        z-index: 2;
+        position: relative;
+        bottom: 19vw;
+        left: 55vw;
+    }
+
+    .tab-rectangle {
+        width: 8vw; 
+        height: 4vw;
+        background-color: #ECE7E1;
+        z-index: 2;
+        position: relative;
+        bottom: 19vw;
+        left: 55vw;
+    }
+}

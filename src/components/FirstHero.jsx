@@ -20,13 +20,14 @@ const FirstHero = () => {
         <div className="h1-h2-container">
             <h1 data-text={first_hero_caption}></h1>
             <h2>{first_hero_subcaption}</h2>
+            <img src="images/arrow-down-sign-to-navigate.png" alt="scroll arrow" />
         </div>
-        <img src="images/scroll-arrow.png" alt="scroll arrow" />
         <img src="images/nikita.png" alt="nikita image" />
-        <div className="tab-triangle"></div>
-        <div className="tab-rectangle"></div>
+        <div className="first-hero-tab">
+            <div className="tab-triangle"></div>
+            <div className="tab-rectangle"></div>
+        </div>
         <div className="first-hero-border"></div>
-        <div className="first-hero-bottom-border"></div>
         <div className="tab-triangle-line"></div>
         <div className="tab-trangle-border"></div>
     </div>
