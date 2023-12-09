@@ -34,15 +34,16 @@
     src: url('./fonts/Kanit-Black.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'GT Walsheim Medium';
+    src: url('./fonts/GT-Walsheim-Medium.otf') format('opentype');
+}
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: #F2F2F2;
-}
-
-html {
-    font-size: 10px;
 }
 
 .first-hero-bg {
@@ -53,9 +54,90 @@ html {
     margin-right: 4.5%;
     margin-top: 14px;
 
-    
-    &:nth-child(1) h1, &:nth-child(2) h1 {
-        font-family: 'Kanit';
-        font-size: 35rem;
-    } 
+    > img {
+        &:nth-child(2) {
+            display: inline-block;
+            height: 100vh;
+        }
+    }
+
+    .h1-h2-container {
+        display: inline-block;
+        position: relative;
+        left: 8vw;
+        bottom: 20vw;
+
+    > h1 {
+        width: 52vw;
+        font-family: 'GT Walsheim Condensed';
+        font-size: 7vw;
+        line-height: 7vw;
+        text-transform: uppercase;
+
+        &:after{
+            content: attr(data-text);
+            -webkit-text-stroke: 0.4vw rgb(62, 37, 15, 0.9);
+            color: rgb(0, 0, 0, 0);
+            // position: absolute;
+            // left: 0;
+            // z-index: -1
+        }
+    }
+
+    > h2 {
+        font-family: "GT Walsheim Medium";
+        width: 52vw;
+        text-transform: uppercase;
+        font-size: 2.5vw;
+        margin: 0;
+        position: relative;
+        bottom: 3vw;
+    }
+
 }
+} 
+
+.first-hero-design {
+    display: inline-block;
+    position: relative;
+    bottom: 7.5vw;
+    right: 1.5vw;
+
+    h1 {
+        &:nth-child(1), &:nth-child(2) {
+            font-family: 'Kanit';
+            font-size: 18vw;
+            margin: 0;
+            padding: 0;
+            display: inline-block;  
+        }
+
+        &:nth-child(1) {
+            color: #BFA288;
+        }
+
+        &:nth-child(2) {
+            color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: 0.5vw rgb(62, 37, 15, 0.8);
+            position: relative;
+            left: -20vw;
+            top: -1vh;
+        }
+    }
+}
+
+.menu-items {
+    display: inline-block;
+    position: relative;
+    bottom: 17vw;
+    left: 12vw;
+
+    > * {
+        display: inline;
+        font-size: 2vw;
+        font-family: 'GT Walsheim Medium';
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+}
+

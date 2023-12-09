@@ -6,15 +6,21 @@ const FirstHero = () => {
 
     return (
     <div className="first-hero-bg">
-        <h1>/{'>'}</h1>
-        <h1>/{'>'}</h1>
-        <div className="menu-items">
-            <h2>about</h2>
-            <h2>portfolio</h2>
-            <h2>work with me</h2>
+        <div className="first-hero-first-block-container">
+            <div className="first-hero-design">
+                <h1>/{'>'}</h1>
+                <h1>/{'>'}</h1>
+            </div>
+            <div className="menu-items">
+                <h2>about</h2>
+                <h2>portfolio</h2>
+                <h2>work with me</h2>
+            </div>
         </div>
-        <h1>{first_hero_caption}</h1>
-        <h2>{first_hero_subcaption}</h2>
+        <div className="h1-h2-container">
+            <h1 data-text={first_hero_caption}></h1>
+            <h2>{first_hero_subcaption}</h2>
+        </div>
         <img src="images/scroll-arrow.png" alt="scroll arrow" />
         <img src="images/nikita.png" alt="nikita image" />
         <div className="tab-triangle"></div>
