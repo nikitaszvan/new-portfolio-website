@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "GT Walsheim";
+  font-family: "GT Walsheim Black";
   src: url("./fonts/GT-Walsheim-Black.otf") format("opentype");
 }
 @font-face {
-  font-family: "GT Walsheim Condensed";
+  font-family: "GT Walsheim Condensed Black";
   src: url("./fonts/GT-Walsheim-Condensed-Black.otf") format("opentype");
 }
 @font-face {
@@ -19,36 +19,44 @@
   src: url("./fonts/GT-Walsheim-Condensed-Medium.otf") format("opentype");
 }
 @font-face {
-  font-family: "GT Walsheim Condensed Ultra-Bold";
+  font-family: "GT Walsheim Condensed Ultra Bold";
   src: url("./fonts/GT-Walsheim-Condensed-Ultra-Bold.otf") format("opentype");
-}
-@font-face {
-  font-family: "Kanit";
-  src: url("./fonts/Kanit-Black.ttf") format("truetype");
 }
 @font-face {
   font-family: "GT Walsheim Medium";
   src: url("./fonts/GT-Walsheim-Medium.otf") format("opentype");
 }
+@font-face {
+  font-family: "GT Walsheim Regular";
+  src: url("./fonts/GT-Walsheim-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("./fonts/Kanit-Black.ttf") format("truetype");
+}
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
   background-color: #F2F2F2;
+  width: 100%;
+  height: 100%;
 }
 
-.first-hero-bg {
+.first-hero {
   width: 91%;
   max-height: 25vw;
-  min-height: 50vw;
+  min-height: 50.5vw;
   background-color: #ECE7E1;
-  margin-left: 4.5%;
-  margin-right: 4.5%;
+  margin-left: 5.5%;
+  margin-right: 3.5%;
   margin-top: 0.5vw;
-  z-index: -1;
+  display: block;
+  position: relative;
+  z-index: 2;
 }
 
 .h1-h2-container {
+  width: 35vw;
   display: block;
   position: relative;
   left: 8vw;
@@ -59,15 +67,11 @@ body, html {
 }
 .h1-h2-container > h1 {
   width: 52vw;
-  font-family: "GT Walsheim Condensed";
-  font-size: 7vw;
+  font-family: "GT Walsheim Condensed Black";
+  font-size: 6.5vw;
   line-height: 7vw;
   text-transform: uppercase;
-}
-.h1-h2-container > h1:after {
-  content: attr(data-text);
-  -webkit-text-stroke: 0.4vw rgba(62, 37, 15, 0.9);
-  color: rgba(0, 0, 0, 0);
+  color: #40260F;
 }
 .h1-h2-container > h2 {
   font-family: "GT Walsheim Medium";
@@ -77,6 +81,7 @@ body, html {
   margin: 0;
   position: relative;
   bottom: 3vw;
+  color: rgba(0, 0, 0, 0.8);
 }
 .h1-h2-container > img {
   position: relative;
@@ -84,12 +89,11 @@ body, html {
 }
 
 .h1-h2-container + img {
-  width: 27vw;
+  width: 28vw;
   position: relative;
   bottom: 62vw;
-  right: 4vw;
+  right: 1vw;
   float: right;
-  z-index: 2;
 }
 
 .first-hero-design {
@@ -97,7 +101,7 @@ body, html {
   position: relative;
   bottom: 7.5vw;
   right: 1.5vw;
-  z-index: 2;
+  z-index: 5;
 }
 .first-hero-design h1:nth-child(1), .first-hero-design h1:nth-child(2) {
   font-family: "Kanit";
@@ -121,7 +125,7 @@ body, html {
   display: inline-block;
   position: relative;
   bottom: 17vw;
-  left: 12vw;
+  left: 10vw;
 }
 .menu-items > * {
   display: inline;
@@ -133,19 +137,28 @@ body, html {
 
 .first-hero-border {
   width: 100%;
-  max-height: 21vw;
-  min-height: 48vw;
+  height: 48vw;
   background-color: rgba(0, 0, 0, 0);
-  border: 0.3vw solid rgba(62, 37, 15, 0.7);
-  right: 2vw;
-  bottom: 109vw;
-  z-index: 1;
+  border: 0.3vw solid #746253;
+  border-right: 0;
+  border-bottom: 0;
+  right: 1vw;
+  bottom: 120vw;
   position: relative;
   clear: both;
+  z-index: 4;
 }
 
+.first-hero-tab {
+  clear: both;
+  float: right;
+  position: relative;
+  top: -65vw;
+  z-index: 3;
+}
 .first-hero-tab > * {
-  display: inline;
+  display: inline-block;
+  position: relative;
 }
 .first-hero-tab .tab-triangle {
   width: 0;
@@ -153,19 +166,111 @@ body, html {
   border-left: 10vw solid transparent;
   border-right: 10vw solid transparent;
   border-top: 10vw solid #ECE7E1;
-  z-index: 2;
-  position: relative;
-  bottom: 19vw;
-  left: 55vw;
+  right: -10vw;
 }
 .first-hero-tab .tab-rectangle {
-  width: 8vw;
-  height: 4vw;
+  height: 10vw;
+  padding-right: 23vw;
   background-color: #ECE7E1;
-  z-index: 2;
   position: relative;
+}
+
+.first-hero-tab-border {
+  position: relative;
+  z-index: 4;
+}
+.first-hero-tab-border > .tab-rectangle-border-1 {
+  width: 0.3vw;
+  height: 53vw;
+  background-color: #746253;
+  position: relative;
+  clear: both;
+  float: right;
+  bottom: 168vw;
+  right: 0.73vw;
+}
+.first-hero-tab-border > .tab-rectangle-border-2 {
+  height: 0.31vw;
+  width: 23.7%;
+  background-color: #746253;
+  position: relative;
+  clear: both;
+  float: right;
+  bottom: 168.3vw;
+  right: 0.73vw;
+}
+.first-hero-tab-border > .tab-rectangle-border-3 {
+  height: 0.3vw;
+  width: 8%;
+  background-color: #746253;
+  position: relative;
+  clear: both;
+  float: right;
+  bottom: 171.1vw;
+  right: 23.2%;
+  transform: rotate(45deg);
+}
+.first-hero-tab-border > .tab-rectangle-border-4 {
+  height: 0.26vw;
+  width: 71.3%;
+  background-color: #746253;
+  position: relative;
+  clear: both;
+  float: right;
+  bottom: 173.85vw;
+  right: 29.8%;
+}
+
+.second-hero {
+  width: 91%;
+  max-height: 25vw;
+  min-height: 50vw;
+  background-color: #E2E3E0;
+  margin-left: 3.5%;
+  margin-right: 5.5%;
+  display: block;
+  position: relative;
+}
+.second-hero .white-background {
+  width: 11vw;
+  height: 8vw;
+  background-color: #F2F2F2;
+  position: relative;
+  left: 58.1vw;
+  bottom: 2.8vw;
+}
+.second-hero .cover-triangle {
+  width: 0;
+  height: 0;
+  border-left: 8vw solid transparent;
+  border-right: 8vw solid transparent;
+  border-top: 8vw solid #E2E3E0;
+  transform: rotate(45deg);
+  position: relative;
+  left: 50.5vw;
+  bottom: 9vw;
+}
+.second-hero > h1 {
+  text-transform: uppercase;
+  font-family: "GT Walsheim Condensed Black";
+  font-size: 7vw;
+  position: relative;
+  left: 9vw;
   bottom: 19vw;
-  left: 55vw;
+  display: inline-block;
+}
+.second-hero > h1:after {
+  content: attr(data-text);
+  -webkit-text-stroke: 0.4vw #444544;
+  color: rgba(0, 0, 0, 0);
+}
+.second-hero > p {
+  width: 90%;
+  font-size: 1.8vw;
+  font-family: "GT Walsheim Medium";
+  position: relative;
+  left: 8vw;
+  bottom: 25vw;
 }
 
 /*# sourceMappingURL=styles.css.map */

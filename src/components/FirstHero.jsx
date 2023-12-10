@@ -1,11 +1,11 @@
 import React from 'react'
 
 const FirstHero = () => {
-    const first_hero_caption= "hi, i'm nikita and i'm a front end developer";
+    const first_hero_caption= `hi, i'm nikita and i'm a front end developer`;
     const first_hero_subcaption= "(and i'll take you through what i can do)";
 
     return (
-    <div className="first-hero-bg">
+    <div className="first-hero">
         <div className="first-hero-first-block-container">
             <div className="first-hero-design">
                 <h1>/{'>'}</h1>
@@ -18,7 +18,7 @@ const FirstHero = () => {
             </div>
         </div>
         <div className="h1-h2-container">
-            <h1 data-text={first_hero_caption}></h1>
+            <h1>{first_hero_caption}</h1>
             <h2>{first_hero_subcaption}</h2>
             <img src="images/arrow-down-sign-to-navigate.png" alt="scroll arrow" />
         </div>
@@ -28,8 +28,13 @@ const FirstHero = () => {
             <div className="tab-rectangle"></div>
         </div>
         <div className="first-hero-border"></div>
-        <div className="tab-triangle-line"></div>
-        <div className="tab-trangle-border"></div>
+        <div className="first-hero-tab-border">
+            <div className="tab-rectangle-border-1"></div>
+            <div className="tab-rectangle-border-2"></div>
+            <div className="tab-rectangle-border-3"></div>
+            <div className="tab-rectangle-border-4"></div>
+        </div>
+        
     </div>
     )
 }
