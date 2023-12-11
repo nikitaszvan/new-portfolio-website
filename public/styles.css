@@ -223,8 +223,7 @@ body, html {
 
 .second-hero {
   width: 91%;
-  max-height: 25vw;
-  min-height: 60vw;
+  height: 67vw;
   background-color: #E2E3E0;
   margin-left: 3.5%;
   margin-right: 5.5%;
@@ -274,7 +273,7 @@ body, html {
 }
 
 .header-image-container {
-  width: 100%;
+  width: 90%;
   position: relative;
   left: 6vw;
 }
@@ -292,6 +291,10 @@ body, html {
   display: inline;
 }
 
+.about-1-container {
+  visibility: hidden;
+}
+
 .about-container {
   background-color: rgba(108, 125, 140, 0.1);
   border: 0.4vw solid rgb(108, 125, 140);
@@ -304,56 +307,51 @@ body, html {
 }
 .about-container > .about-p {
   display: block;
+  width: 90%;
   font-size: 1.8vw;
   font-family: "GT Walsheim Medium";
   position: relative;
   left: 6vw;
   margin: 0;
+  margin-bottom: 1vw;
 }
 
-.about-1-container {
+.about-2-container {
   border-top: 0.4vw solid rgb(108, 125, 140);
 }
 
-.about-5-container {
+.about-6-container {
   border-bottom: 0.4vw solid rgb(108, 125, 140);
 }
 
 .about-section {
   position: relative;
-  bottom: 42vw;
+  bottom: 60vw;
   left: 1vw;
   width: 91%;
   margin-left: 3.5%;
 }
 
-.header-image-3-container > img {
-  width: 3vw;
-}
-
-.header-image-1-container > img {
-  width: 3vw;
-}
-
 .third-hero {
-  width: 100%;
-  background-color: #F2F2F2;
+  width: 110%;
   max-height: 25vw;
   min-height: 17vw;
-  z-index: 4;
+  background-color: #F2F2F2;
+  display: block;
   position: relative;
-  bottom: 38vw;
+  top: 2vw;
+  right: 4.5vw;
 }
 
-.third-hero-cover {
-  width: 91%;
+.third-hero-bg {
+  width: 90%;
   max-height: 25vw;
   min-height: 17vw;
   background-color: #ECE7E1;
-  margin-left: 5.5%;
-  margin-right: 3.5%;
   display: block;
   position: relative;
+  margin-left: 5.5%;
+  margin-right: 3.5%;
 }
 
 /*# sourceMappingURL=styles.css.map */

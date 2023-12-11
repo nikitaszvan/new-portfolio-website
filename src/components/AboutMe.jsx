@@ -1,8 +1,9 @@
 import React from "react";
 import useHover from "./useHover.jsx";
 import AboutData from "./AboutData.jsx";
+import ThirdHero from "./ThirdHero.jsx";
 
-const HomeNavbar = () => {
+const AboutMe = () => {
   const {hoverStates, handleMouseEnter, handleMouseLeave } = useHover();
 
   const about = AboutData.map((data, index) => (
@@ -20,7 +21,7 @@ const HomeNavbar = () => {
       </div> 
   ))
 
-  return <div className="about-section">{about}</div>;
+  return <div className="about-section">{about}<ThirdHero /></div>;
 };
 
-export default HomeNavbar;
+export default AboutMe;

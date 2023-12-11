@@ -1,5 +1,4 @@
 import React from 'react'
-import AboutMe from './AboutMe.jsx'
 
 const SecondHero = () => {
   const about_me = "I am a junior front-end developer currently working at Reev Industries and my specialties are using react and implementation of html, css, node, express to provide responsive layout, data fetching and ssr.";
