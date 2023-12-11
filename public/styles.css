@@ -291,10 +291,6 @@ body, html {
   display: inline;
 }
 
-.about-1-container {
-  visibility: hidden;
-}
-
 .about-container {
   background-color: rgba(108, 125, 140, 0.1);
   border: 0.4vw solid rgb(108, 125, 140);
@@ -316,6 +312,19 @@ body, html {
   margin-bottom: 1vw;
 }
 
+.about-1-container {
+  border-top: 0;
+  border-bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  height: 18vw;
+}
+.about-1-container > * {
+  visibility: hidden;
+}
+.about-1-container:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .about-2-container {
   border-top: 0.4vw solid rgb(108, 125, 140);
 }
@@ -326,14 +335,14 @@ body, html {
 
 .about-section {
   position: relative;
-  bottom: 60vw;
+  bottom: 67vw;
   left: 1vw;
   width: 91%;
   margin-left: 3.5%;
 }
 
 .third-hero {
-  width: 110%;
+  width: 109.7%;
   max-height: 25vw;
   min-height: 17vw;
   background-color: #F2F2F2;
@@ -344,7 +353,7 @@ body, html {
 }
 
 .third-hero-bg {
-  width: 90%;
+  width: 91%;
   max-height: 25vw;
   min-height: 17vw;
   background-color: #ECE7E1;
