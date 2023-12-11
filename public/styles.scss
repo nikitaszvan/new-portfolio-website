@@ -253,12 +253,13 @@ body, html {
 .second-hero {
     width: 91%;
     max-height: 25vw;
-    min-height: 50vw;
+    min-height: 60vw;
     background-color: #E2E3E0;
     margin-left: 3.5%;
     margin-right: 5.5%;
     display: block;
     position: relative;
+
 
     .white-background {
         width: 11vw;
@@ -286,13 +287,13 @@ body, html {
         font-family: 'GT Walsheim Condensed Black';
         font-size: 7vw;
         position: relative;
-        left: 9vw;
+        left: 8.5vw;
         bottom: 19vw;
         display: inline-block;
 
         &:after {
             content: attr(data-text);
-            -webkit-text-stroke: 0.4vw #444544;
+            -webkit-text-stroke: 0.35vw #444544;
             color: rgb(0, 0, 0, 0);
         }
     }
@@ -306,5 +307,97 @@ body, html {
         bottom: 25vw;
     }
 }
+.header-image-container {
+    width: 100%;
+    position: relative;
+    left: 6vw;
+
+    > img {
+        width: 5vw;
+    }
+
+    > h2 {
+        font-size: 5vw;
+        margin: 0;
+        font-family: 'GT Walsheim Condensed Black';
+        text-transform: uppercase;
+        color: rgb(0, 0, 0, 0.7);
+    }
+
+    > .about-header, > .about-image {
+        display: inline;
+    }
+}
+
+.about-container {
+    background-color: rgba(108, 125, 140, 0.1);
+    border: 0.4vw solid rgba(108, 125, 140);
+    border-bottom: 0.2vw solid rgba(108, 125, 140);
+    border-top: 0.2vw solid rgba(108, 125, 140);
+
+    &:hover {
+        background-color: rgba(108, 125, 140, 0.4);
+        color: #F2F2F2;
+    }
+
+    > .about-p {
+        display: block;
+        font-size: 1.8vw;
+        font-family: 'GT Walsheim Medium';
+        position: relative;
+        left: 6vw;
+        margin: 0;
+    }
+    
+}
+
+.about-1-container {
+    border-top: 0.4vw solid rgba(108, 125, 140);
+}
+
+.about-5-container {
+    border-bottom: 0.4vw solid rgba(108, 125, 140);
+}
 
 
+.about-section {
+    position: relative;
+    bottom: 42vw;
+    left: 1vw;
+    width: 91%;
+    margin-left: 3.5%;
+}
+
+.header-image-3-container {
+    > img {
+        width: 3vw;
+    }
+}
+
+.header-image-1-container {
+    > img {
+        width: 3vw;
+    }
+}
+
+.third-hero {
+    width: 100%;
+    background-color: #F2F2F2;
+    max-height: 25vw;
+    min-height: 17vw;
+    z-index: 4;
+    position: relative;
+    bottom: 38vw;
+
+}
+
+.third-hero-cover {
+    width: 91%;
+    max-height: 25vw;
+    min-height: 17vw;
+    background-color: #ECE7E1;
+    margin-left: 5.5%;
+    margin-right: 3.5%;
+    display: block;
+    position: relative;
+}
