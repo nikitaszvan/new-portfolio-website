@@ -1,0 +1,90 @@
+HTML: 
+
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+     <div class="first-box"></div>
+     <div class="second-box"></div>
+     <div class="third-box"></div>
+  </body>
+</html>
+
+
+CSS: 
+
+
+.first-box {
+  height:50px;
+  width:50px;
+  margin:50px;
+  border:3px solid;
+  position:relative;
+  background-color: red;
+  z-index: 2;
+}
+.second-box {
+  height:50px;
+  width:50px;
+  margin:50px;
+  border:3px solid;
+  position:relative;
+  top: -106px;
+  transform-origin: top;
+  z-index: 1;
+}
+
+.third-box {
+  height:50px;
+  width:50px;
+  margin:50px;
+  border:3px solid;
+  position:relative;
+  top: -159px;
+  background-color: white;
+}
+
+
+.first-box:hover ~ .second-box {
+  animation: forwards scale_red 0.5s ease-out;
+}
+
+.first-box:hover ~ .third-box {
+  animation: forwards scale_red 0.5s ease-out;
+}
+
+.first-box ~ .second-box {
+  animation: forwards rev 0.5s ease-in;
+}
+
+.first-box ~ .third-box {
+  animation: forwards rev 0.5s ease-in;
+}
+
+
+
+
+
+@keyframes scale_red {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(94%);
+  }
+}
+
+@keyframes rev {
+  0% {
+    transform: translateY(94%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+

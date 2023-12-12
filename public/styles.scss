@@ -350,7 +350,6 @@ body {
     width: 90%;
     position: relative;
     left: 6vw;
-    
 
     > img {
         width: 5vw;
@@ -375,11 +374,7 @@ body {
     border: 0.4vw solid rgba(108, 125, 140);
     border-bottom: 0.2vw solid rgba(108, 125, 140);
     border-top: 0.2vw solid rgba(108, 125, 140);
-
-    &:hover {
-        background-color: rgba(108, 125, 140, 0.4);
-        color: #F2F2F2;
-    }
+    overflow: hidden;
 
     > .about-p {
         display: block;
@@ -391,6 +386,17 @@ body {
         margin: 0;
         margin-bottom: 1vw;
     }
+
+    &:hover {
+        background-color: rgba(108, 125, 140, 0.4);
+        color: #F2F2F2;
+    }
+
+    &:hover {
+        background-color: rgba(108, 125, 140, 0.4);
+        color: #F2F2F2;
+    }
+
     
 }
 
