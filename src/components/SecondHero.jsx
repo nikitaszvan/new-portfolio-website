@@ -5,8 +5,14 @@ const SecondHero = () => {
 
   return (
     <div className="second-hero">
-      <div className="white-background"></div>
-      <div className="cover-triangle"></div>
+      <div className="first-hero-cover-container">
+        <div className="white-background"></div>
+        <div className="cover-triangle"></div>
+      </div>
+      <div className="second-hero-container">
+        <div className="second-border-1"></div>
+        <div className="second-border-2"></div>
+      </div>
       <h1 data-text="about me"></h1>
       <p>{about_me}</p>
     </div>
