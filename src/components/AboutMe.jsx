@@ -16,9 +16,8 @@ const AboutMe = () => {
             <h2 className='about-header'>{data.header}</h2>
             <img className='about-image' src={data.src} alt={data.alt} />
         </div>
-        {(hoverStates[index] && index != 0) &&
-        (<p className='about-p'>{data.descrip}</p>)}
-      </div> 
+          <p className='about-p'>{data.descrip}</p>
+      </div>
   ))
 
   return <div className="about-section">{about}<ThirdHero /></div>;
