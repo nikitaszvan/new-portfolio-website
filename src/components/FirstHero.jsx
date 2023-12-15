@@ -12,9 +12,9 @@ const FirstHero = () => {
                 <h1>/{'>'}</h1>
             </div>
             <div className="menu-items">
-                <h2>about</h2>
-                <h2>portfolio</h2>
-                <h2>work with me</h2>
+                <h2 data-text="about">about</h2>
+                <h2 data-text="portfolio">portfolio</h2>
+                <h2 data-text="work with me">work with me</h2>
             </div>
         </div>
         <div className="h1-h2-container">
