@@ -30,7 +30,6 @@ const keyFramesTransDown = `
 }`;
 
 const styleTag = document.createElement('style');
-  styleTag.type= 'text/css';
   styleTag.appendChild(document.createTextNode(keyFramesTransUp));
   styleTag.appendChild(document.createTextNode(keyFramesTransDown));
   document.head.appendChild(styleTag);
